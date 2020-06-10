@@ -1,0 +1,16 @@
+:root{
+--primary:#ddd;
+--dark:#333;
+--light:#ffffff;
+--shadow:0 1px 5px rgba(104,104,104,0.8);
+--backcolor:#bcaaa4;
+--headercolor:#272343;
+--taxationbackcolor:#240090;
+--taxationfontcolor:#272343;
+--fontcard:#66fcf1;
+--backcard:#190061;
+--pinkpng:#ff0057;
+/* colors #190061 ,#66fcf1 ,#240090 #272343
+/* --headercolor:rgba(0,214,170,.85); */
+
+}

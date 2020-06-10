@@ -1,0 +1,547 @@
+
+img{
+    max-width: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-gap:5px;
+}
+/* Cards */
+.cards-section{
+    
+    display: grid;
+    grid-gap:3px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr) );
+    grid-auto-rows: 300px;
+  
+
+}
+
+
+.card{
+transform-style: preserve-3d;
+perspective: 600px;
+transition: 0.58s;
+}
+
+.card .front{
+    position:relative;/*to overlay */
+    /* background:url(//source.unsplash.com/1280x720/?tree?1); */
+    /* background:url(../images/taxx.jpg);  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;   
+    /* background:var(--backcard);   */
+    background-image: linear-gradient(to bottom ,var(--backcard) 1%, #ff0057 );
+    backface-visibility: hidden;
+    transform: rotateX( 0deg);
+    transition: 0.5s;
+}
+.card .front > *{
+    position: relative;
+    z-index: 2;
+}
+.card .front::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+
+.card:hover .front{
+    transform: rotateX(-180deg);
+}
+.card-one .front .detail{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .front .detail h1{
+    position: relative;
+    top: 125px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color:var(--fontcard);
+    text-align: center;
+    /* border: 1px solid yellow; */
+
+}
+.card .front .detail h1 span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+.card .back {
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    /* background:url(//source.unsplash.com/1280x720/?tree?1); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    width: 100%;
+    height: 100%; 
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background: var(--backcard); */
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.card .back > *{
+    position: relative;
+    z-index: 2;
+}
+.card .back::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+.card:hover .back{
+    transform: rotateX( 0deg );
+}
+.card .back .details{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .back .details p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color:var(--fontcard);
+
+}
+.card .back .details p span{
+  
+    font-size: 10px;
+    color:var(--fontcard);;
+    line-height: 0.1;
+
+}
+.cards-section .card .front .detail .read-more{
+    position: relative;
+    top:200px;
+    left: 35%;
+    text-align: center;
+    font-weight: 900;
+    color:white;
+    padding:5px;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid white;
+    width: 100px;
+    /* margin-right:120px;
+    margin-left: 120px; */
+
+}
+
+ 
+ .cards-section .card .front .detail .read-more:hover {
+      color:var(--fontcard);
+      background:#fff;
+  
+  }
+
+
+
+
+/* thoese below codes has no effect  */
+.card-two{
+transform-style: preserve-3d;
+perspective: 600px;
+transition: 0.58s;
+}
+.card-two .front{
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;  
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background:var(--backcard); */
+    backface-visibility: hidden;
+    transform: rotateX( 0deg);
+    transition: 0.5s;
+}
+.card-two .front > *{
+    position: relative;
+    z-index: 2;
+}
+.card-two .front::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+
+.card-two:hover .front{
+    transform: rotateX(-180deg);
+}
+.card-two .front .detail{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-two .front .detail h1{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color:var(--fontcard);;
+
+}
+.card-two .front .detail h1 span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+.card-two .back {
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    /* background:url(//source.unsplash.com/1280x720/?tree?1); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; 
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background:var(--backcard);  */
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.card-two .back > *{
+    position: relative;
+    z-index: 2;
+}
+.card-two .back::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+.card-two:hover .back{
+    transform: rotateX( 0deg );
+}
+.card-two .back .details{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-two .back .details p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color:var(--fontcard);;
+
+}
+.card-two .back .details p span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+.card-three{
+
+transform-style: preserve-3d;
+perspective: 600px;
+transition: 0.58s;
+}
+.card-three .front{
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background:var(--backcard); */
+    backface-visibility: hidden;
+    transform: rotateX( 0deg);
+    transition: 0.5s;
+}
+.card-three .front > *{
+    position: relative;
+    z-index: 2;
+}
+.card-three .front::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+
+.card-three:hover .front{
+    transform: rotateX(-180deg);
+}
+.card-three .front .detail{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-three .front .detail h1{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color:var(--fontcard);;
+
+}
+.card-three .front .detail h1 span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+.card-three .back {
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    /* background:url(//source.unsplash.com/1280x720/?tree?1); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background: var(--backcard); */
+     backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.card-three .back > *{
+    position: relative;
+    z-index: 2;
+}
+.card-three .back::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+.card-three:hover .back{
+    transform: rotateX( 0deg );
+}
+.card-three .back .details{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-three .back .details p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color:var(--fontcard);;
+
+}
+.card-three .back .details p span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+.card-four{
+transform-style: preserve-3d;
+perspective: 600px;
+transition: 0.58s;
+}
+.card-four .front{
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%; 
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background: var(--backcard); */
+    backface-visibility: hidden;
+    transform: rotateX( 0deg);
+    transition: 0.5s;
+}
+.card-four .front > *{
+    position: relative;
+    z-index: 2;
+}
+.card-four .front::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+
+.card-four:hover .front{
+    transform: rotateX(-180deg);
+}
+.card-four .front .detail{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-four .front .detail h1{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color:var(--fontcard);;
+
+}
+.card-four .front .detail h1 span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+.card-four .back {
+    position:relative;/*to overlay */
+    /* background:url(../images/taxx.jpg);  */
+    /* background:url(//source.unsplash.com/1280x720/?tree?1); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;  
+    background-image: linear-gradient(to left,var(--backcard) 1%, #557a95 );
+    /* background:var(--backcard); */
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+.card-four .back > *{
+    position: relative;
+    z-index: 2;
+}
+.card-four .back::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .1);
+    z-index:1;
+}
+.card-four:hover .back{
+    transform: rotateX( 0deg );
+}
+.card-four .back .details{
+  
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-four .back .details p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color:var(--fontcard);
+
+}
+.card-four .back .details p span{
+  
+    font-size: 16px;
+    color:var(--fontcard);;
+
+}
+ 

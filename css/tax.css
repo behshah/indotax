@@ -1,0 +1,196 @@
+
+  .tax-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    min-height: 100vh;
+    position: relative;
+    top:-37rem;
+    /* background-color: red; */
+   
+   
+
+  }
+  .tax-container .front-content1{
+    /* font-weight: 5000; */
+    grid-column: 1/5;
+   
+   
+  
+  }
+ .tax-container .front-content1 h1{
+    font-family: 'Nanum Myeongjo', serif;
+    color:#333;
+    text-align: center;
+    font-size:50px;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    
+    
+  }
+
+  .tax-container .front-content2{
+    /* border: 1px solid yellow; */
+    background-color:black;
+    grid-column: 1/2;
+  }
+  .tax-container .front-content2 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    color:#fff;
+    position: relative;
+    text-align: left;
+    letter-spacing: .8rem;
+    margin-left: 10px;
+    text-align: center;
+
+  }
+  /* .tax-container .front-content2 h2::after{
+    content:'';
+    display: block;
+    width:600px;
+    height:1px;
+    background-color:#fff;
+    position: absolute;
+    top:50px;
+    left:10px;
+
+  } */
+  .tax-container  .front-content3{
+    /* border: 1px solid yellow; */
+    background-color:black;
+    grid-column: 2/5;
+  }
+  .tax-container .front-content3 p{
+    text-align: center;
+    font-size: large;
+    color:#fff;
+  }
+   .tax-container .front-content4{
+    grid-column: 1/2;
+    /* border: 1px solid yellow; */
+    background-color: #fff;
+  }
+  .tax-container .front-content4 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    position: relative;
+    text-align: left;
+    letter-spacing: .8rem;
+    margin-left: 10px;
+    text-align: center;
+    color:#333;
+  }
+   .tax-container .front-content5{
+    /* border: 1px solid yellow; */
+    background-color: #fff;
+    grid-column: 2/5;
+  }
+   .tax-container .front-content5 p{
+    text-align: center;
+    font-size: large;
+    color:#333;
+  }
+.tax-container .front-content6{
+    background-color:black;
+    grid-column: 1/2;
+    /* border: 1px solid yellow; */
+  }
+ .tax-container .front-content6 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+    position: relative;
+    text-align: left;
+    letter-spacing: 1rem;
+    margin-left: 10px;
+    text-align: center;
+    color:#fff;
+  }
+   .tax-container .front-content7{
+    background-color:black;
+    grid-column: 2/5;
+    /* border: 1px solid yellow; */
+  }
+ .tax-container .front-content7 p{
+    text-align: center;
+    font-size: large;
+    color:#fff; 
+  }
+ 
+ 
+  @media screen and (max-width:300px) {
+
+    .tax-container .front-content1{
+      /* border: 1px solid yellow; */
+      background-color:yellow;
+      grid-column: 1/2;
+    
+  
+    }
+    .tax-container .front-content3{
+      /* border: 1px solid yellow; */
+      background-color:black;
+      grid-column: 1/2;
+    }
+    .tax-container .front-content5{
+      /* border: 1px solid yellow; */
+      background-color: #fff;
+      grid-column: 1/2;
+    }
+
+    .tax-container .front-content7{
+      /* border: 1px solid yellow; */
+      background-color: black;
+      grid-column: 1/2;
+    }
+      
+    }
+    @media screen and (max-width:500px) {
+
+      .tax-container .front-content1{
+        background-color: #fff;
+        grid-column: 1/2;
+        position: relative;
+        
+    
+      }
+      .tax-container .front-content3{
+        /* border: 1px solid yellow; */
+        background-color:black;
+        grid-column: 1/2;
+      }
+      .tax-container .front-content5{
+        /* border: 1px solid yellow; */
+        background-color: #fff;
+        grid-column: 1/2;
+      }
+  
+      .tax-container .front-content7{
+        /* border: 1px solid yellow; */
+        background-color: black;
+        grid-column: 1/2;
+      }
+        
+      }
+  
+
+      @media screen and (max-width:800px) {
+        .tax-container .front-content2 h2{
+         
+        position: relative;
+        top:25%;
+      
+        }
+        .tax-container .front-content4 h2{
+         
+          position: relative;
+          top:25%;
+        
+          }
+          .tax-container .front-content6 h2{
+         
+            position: relative;
+            top:25%;
+          
+            }
+
+      }

@@ -1,0 +1,222 @@
+  
+ .box-container {
+  display: grid;
+  grid-template-areas: 
+  'tax-section tax-section'
+ ;
+  /* background-color: var(--backcolor); */
+    }
+ .comreg-section{
+   position: relative;/*to overlay*/
+   
+   top:-35rem;
+   grid-area: tax-section;
+    /* width: 100%;  */
+    min-height: 450px;
+    margin: 0;
+     background-color: var(--light); 
+    /* background:url(../images/taxx.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    padding: 3rem;
+    
+
+  }
+  .comreg-section > *{
+    position: relative;
+    z-index: 2;
+
+  }
+  .comreg-section::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background:rgba(0, 0, 0, 0.1); */
+    z-index:1;
+  }
+
+  /* .top-box-a{
+    grid-area: top-box-a;
+  }
+  .top-box-b{
+    grid-area: top-box-b;
+  } */
+  .box-container .comreg-section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+ 
+ 
+ 
+ .box-container .comreg-section h2{
+     position: absolute;
+      top:70px;
+      right:1px;
+      margin: 0;
+      padding: 0;
+      font-size: 2em;
+      color:var(--taxationfontcolor);
+      transition: 0.5s;
+ }
+  
+ .box-container .comreg h2{
+  position: absolute;
+   top:10px;
+   right:1px;
+   margin: 0;
+   padding: 0;
+   font-size: 3em;
+   color:var(--taxationfontcolor);
+   transition: 0.5s;
+}
+ 
+ .box-container .comreg-section:hover h2{ 
+     
+     right:140px;
+ }
+ 
+ .box-container .comreg-section h3{
+     position: relative;
+     top: 80px;
+     margin:0 0 10px;
+     padding: 0;
+     font-size: 24px;
+     font-weight: 500;
+     color:var(--pfontcard);
+ 
+ }
+ 
+ .box-container .comreg-section p{
+     position: relative;
+     top:80px;
+     margin: 0;
+     padding:0;
+     color:var(--pfontcard);
+     font-size: 16px;
+     text-align: left;
+ 
+ }
+ .box-container .comreg-section a{
+   
+   position: relative;
+   top:60px;
+   margin: 20px 0 0 ;
+   padding: 10px 20px;
+   text-decoration: none;
+   border:1px solid #ffffff;
+   display:inline-block;
+   color:#ffffff;
+   transition: 0.5s;
+   transform:translateY(-40px);
+   opacity: 0;
+   visibility: hidden;
+ 
+ 
+ }
+ 
+ .box-container .comreg-section:hover a{
+   
+   transform:translateY(0);
+   opacity: 1;
+   visibility: visible;
+ 
+ }
+ .box-container .comreg-section a:hover{
+     color:#000;
+     background:#ffffff;
+ 
+ }
+ @media (min-width:800px) {
+  .box-container {
+    
+    grid-template-areas: 
+    'tax-section tax-section '
+   ;
+  
+      }
+
+      .box-container .comreg-section h2{
+        
+        font-size:18em;
+      
+      }
+      .box-container .comreg-section:hover h2{ 
+       
+        right:340px;
+        
+        
+    }
+
+      .box-container .comreg-section h3{
+       
+        font-size: 250px;
+       
+       
+    
+    }
+    
+    .box-container .comreg-section p{
+       
+        font-size: 25px;
+       
+    
+    }
+   
+ }
+ @media (min-width:400px) {
+  .box-container {
+    
+    grid-template-areas: 
+    'comreg-section comreg-section '
+   ;
+  
+      }
+
+      .box-container .comreg-section h2{
+        position: absolute;
+        top:30px;
+        right:1px;
+        font-size:3em;
+      }
+      .box-container .comreg-section:hover h2{ 
+     
+        right:200px;
+        
+    }
+
+      .box-container .comreg-section h3{
+        position: relative;
+        top: 100px;
+        margin:0 0 10px;
+        padding: 0;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .box-container .comreg-section p{
+     
+        font-size: 20px;
+        position: relative;
+        top: 110px;
+        margin:0 0 10px;
+        padding: 0;
+        
+       
+    
+    }
+    .box-container .comreg-section a{
+   
+      position: relative;
+      top:100px;
+    
+    
+    }
+ }
+
